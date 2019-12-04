@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: rajugattupally/ubuntu1:raj
+        image: krishna1952/poc
         ports:
         - containerPort: 80
