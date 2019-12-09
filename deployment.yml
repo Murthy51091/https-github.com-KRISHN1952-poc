@@ -34,10 +34,10 @@ spec:
     spec:
       containers:
       - name: nginx-deployment
-        image: krishna1952/poc
+        image: krishna1952/poc1
         ports:
         - containerPort: 80
- ---
+---
 apiVersion: v1
 kind: Service
 metadata:
