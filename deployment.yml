@@ -34,6 +34,6 @@ spec:
     spec:
       containers:
       - name: nginx-deployment
-        image: krishna1952/poc1:latest
+        image: krishna1952/poc1
         ports:
         - containerPort: 80
