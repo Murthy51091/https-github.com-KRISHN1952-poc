@@ -35,6 +35,6 @@ spec:
       containers:
       - name: nginx-deployment
         image: krishna1952/poc1:latest
-        imagePullPolicy: Always
+      imagePullPolicy: Always
         ports:
         - containerPort: 80
