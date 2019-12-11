@@ -8,11 +8,11 @@ node{
       withCredentials([string(credentialsId: 'DOCKER_HUB_CREDENTIALS', variable: 'DOCKER_HUB_CREDENTIALS')]) {
         sh 'docker login -u krishna1952 -p ${DOCKER_HUB_CREDENTIALS}'
       }
-        sh "docker build -t cloudedge/poc-2 ."
+        sh "docker build -t cloudedge ."
     }
     
     stage('Push Docker Image'){
-        sh "docker push cloudedge/poc-2"
+        sh "docker push cloudedge"
     }   
     stage ('deploy to kubernetes'){
         kubernetesDeploy(
