@@ -12,7 +12,7 @@ node{
     }
     
     stage('Push Docker Image'){
-        sh "docker push krishna1952/cloudedge/poc2"
+        sh "docker push krishna1952/cloudedge/poc-2"
     }   
     stage ('deploy to kubernetes'){
         kubernetesDeploy(
